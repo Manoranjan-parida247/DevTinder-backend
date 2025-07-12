@@ -10,8 +10,8 @@ const connectionRequestSchema = new mongoose.Schema({
     toUserId: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
-        index: true
-
+        index: true,
+        ref: "User"
     },
 
     status: {
